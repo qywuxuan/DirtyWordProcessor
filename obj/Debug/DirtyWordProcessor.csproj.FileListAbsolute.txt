@@ -1,0 +1,7 @@
+C:\Git\E\DirtyWordProcessor\bin\Debug\DirtyWordProcessor.exe.config
+C:\Git\E\DirtyWordProcessor\bin\Debug\DirtyWordProcessor.exe
+C:\Git\E\DirtyWordProcessor\bin\Debug\DirtyWordProcessor.pdb
+C:\Git\E\DirtyWordProcessor\obj\Debug\DirtyWordProcessor.csprojAssemblyReference.cache
+C:\Git\E\DirtyWordProcessor\obj\Debug\DirtyWordProcessor.csproj.CoreCompileInputs.cache
+C:\Git\E\DirtyWordProcessor\obj\Debug\DirtyWordProcessor.exe
+C:\Git\E\DirtyWordProcessor\obj\Debug\DirtyWordProcessor.pdb
