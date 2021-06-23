@@ -28,9 +28,16 @@ namespace DirtyWordProcessor
                 return word2.Length - word1.Length;
             });
 
+            SetContent("dirtyWords_new", Collection2string(temp));
+
+            SetContent("delta", Collection2string(temp.Except(origin)));
+        }
+
+        static string Collection2string(IEnumerable<string> list)
+        {
             var sb = new StringBuilder();
 
-            foreach (var word in temp)
+            foreach (var word in list)
             {
                 if (word.Length == 0)
                     continue;
@@ -39,7 +46,7 @@ namespace DirtyWordProcessor
                 sb.Append(SPLIT);
             }
 
-            SetContent("dirtyWords_new", sb.ToString());
+            return sb.ToString();
         }
 
         static string[] GetContent(string fileName)
