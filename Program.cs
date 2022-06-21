@@ -21,14 +21,14 @@ namespace DirtyWordProcessor
 
             var temp = origin.ToList();
             temp.AddRange(append.ToList());
-            temp.Distinct();
+            var res = temp.Distinct().ToList();
 
-            temp.Sort((word1, word2) =>
+            res.Sort((word1, word2) =>
             {
                 return word2.Length - word1.Length;
             });
 
-            SetContent("dirtyWords_new", Collection2string(temp));
+            SetContent("dirtyWords_new", Collection2string(res));
 
             SetContent("delta", Collection2string(temp.Except(origin)));
         }
